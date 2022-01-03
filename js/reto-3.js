@@ -6,14 +6,17 @@ let cobranMucho = 0;
 let cobranPoco = 0;
 let total = 0;
 let i = 1;
+
 while (i <= cantEmpleados) {
   const sueldo = parseInt(prompt("Ingrese el sueldo"));
   if (sueldo >= 100 && sueldo <= 300) {
-      cobranPoco++;
-  }else {
-      cobranMucho++
+    cobranPoco++;
+  } else {
+    cobranMucho++;
   }
-  total = total + sueldo
+  total = total + sueldo;
   i++;
 }
-alert(`Los empleados que cobran mucho son:${cobranMucho}, los que cobran poco son: ${cobranPoco} y el sueldo total es: ${sueldo}`)
+alert(
+  `Los empleados que cobran mucho son:${cobranMucho}, los que cobran poco son: ${cobranPoco} y el sueldo total es: ${sueldo}`
+);
